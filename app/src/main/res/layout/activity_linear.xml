@@ -5,9 +5,9 @@
     android:layout_height="match_parent">
 
     <Space
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,32 +15,24 @@
         android:orientation="horizontal">
 
         <Button
+            style="@style/button"
             android:id="@+id/button1"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_1"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_1" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button2"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_2"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_2" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button3"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_3"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1"
-            />
+            android:text="@string/_3" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/buttonPlus"
+            android:text="@string/_plus" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,31 +41,24 @@
         android:orientation="horizontal">
 
         <Button
+            style="@style/button"
             android:id="@+id/button4"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_4"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_4" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button5"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_5"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_5" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button6"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_6"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_6" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/buttonMinus"
+            android:text="@string/_minus" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,31 +67,24 @@
         android:orientation="horizontal">
 
         <Button
+            style="@style/button"
             android:id="@+id/button7"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_7"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_7" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button8"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_8"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_8" />
 
         <Button
+            style="@style/button"
             android:id="@+id/button9"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_9"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_9" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/buttonMultiply"
+            android:text="@string/_multiply" />
     </LinearLayout>
 
     <LinearLayout
@@ -115,22 +93,29 @@
         android:orientation="horizontal">
 
         <Button
+            style="@style/button"
             android:id="@+id/button0"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_0"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="2" />
+            android:text="@string/_0" />
 
         <Button
+            style="@style/button"
             android:id="@+id/buttonDot"
-            android:layout_margin="@dimen/margin_small"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/_dot"
-            android:textSize="@dimen/key_text_size"
-            android:layout_weight="1" />
+            android:text="@string/_dot" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/buttonEquals"
+            android:text="@string/_equals" />
+
+        <Button
+            style="@style/button"
+            android:id="@+id/buttonShare"
+            android:text="@string/_share" />
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>
