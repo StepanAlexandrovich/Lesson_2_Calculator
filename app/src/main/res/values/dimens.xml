@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textView_text_size">40sp</dimen>
+    <dimen name="textView_text_size">20sp</dimen>
     <dimen name="key_text_size">20sp</dimen>
     <dimen name="margin_small">4dp</dimen>
-    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_big">8dp</dimen>
 </resources>
