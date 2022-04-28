@@ -17,26 +17,14 @@ public class Logic {
     //////////////////////////////////////////////
 
     void inputNumber(String number){
-        if(a==null){
-            a = number;
-            //text += number;
-            text = a;
-        }else
+        if(a==null){ text = ""; }
 
-        if(action==null){
-            a+=number;
-            text += number;
-        }else
+        if(a==null)      { a = number; } else
+        if(action==null) { a+=number;  } else
+        if(b == null)    { b = number; } else
+        if(result==null) { b+=number;  }
 
-        if(b == null){
-            b = number;
-            text += number;
-        }else
-
-        if(result==null){
-            b+=number;
-            text += number;
-        }
+        text += number;
     }
 
     void inputAction(String action){
@@ -55,6 +43,8 @@ public class Logic {
             b = null;
         }
     }
+
+    void resetText(){ text = ""; }
 
     ///////// outPut ///////////////
     String getText(){ return text; }
