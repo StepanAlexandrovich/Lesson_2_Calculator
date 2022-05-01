@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button7).setOnClickListener(this);
         findViewById(R.id.button8).setOnClickListener(this);
         findViewById(R.id.button9).setOnClickListener(this);
-        //findViewById(R.id.buttonDot).setOnClickListener(this);
+        findViewById(R.id.buttonDot).setOnClickListener(this);
         // action
         findViewById(R.id.buttonPlus).setOnClickListener(this);
         findViewById(R.id.buttonMinus).setOnClickListener(this);
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button7: logic.inputNumber("7"); break;
             case R.id.button8: logic.inputNumber("8"); break;
             case R.id.button9: logic.inputNumber("9"); break;
-            //case R.id.buttonDot: logic.inputNumber("."); break;
+            case R.id.buttonDot: logic.inputNumber("."); break;
               // action
             case R.id.buttonPlus: logic.inputAction("+"); break;
             case R.id.buttonMinus: logic.inputAction("-"); break;
