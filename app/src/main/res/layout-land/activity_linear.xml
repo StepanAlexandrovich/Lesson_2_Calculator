@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:layout_margin="@dimen/margin_small"
+        android:layout_margin="@dimen/margin_textView"
         android:textSize="@dimen/textView_text_size"
         android:gravity="right"
         android:background="@drawable/screenimage"

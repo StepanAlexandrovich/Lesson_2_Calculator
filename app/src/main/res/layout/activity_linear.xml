@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:layout_margin="@dimen/margin_small"
+        android:layout_margin="@dimen/margin_textView"
         android:textSize="@dimen/textView_text_size"
         android:gravity="right"
         android:background="@drawable/screenimage"
@@ -22,28 +22,36 @@
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
+
             android:id="@+id/button1"
             android:text="@string/_1"
 
-            android:backgroundTint="#2196F3"
-            app:cornerRadius="32dp"
-            />
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient" />
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button2"
             android:text="@string/_2"
-            />
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient" />
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button3"
-            android:text="@string/_3" />
+            android:text="@string/_3"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonPlus"
-            android:text="@string/_plus" />
+            android:text="@string/_plus"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
     </LinearLayout>
 
     <LinearLayout
@@ -52,22 +60,34 @@
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button4"
-            android:text="@string/_4" />
+            android:text="@string/_4"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button5"
-            android:text="@string/_5" />
+            android:text="@string/_5"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button6"
-            android:text="@string/_6" />
+            android:text="@string/_6"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonMinus"
-            android:text="@string/_minus" />
+            android:text="@string/_minus"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
     </LinearLayout>
 
     <LinearLayout
@@ -76,22 +96,34 @@
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button7"
-            android:text="@string/_7" />
+            android:text="@string/_7"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button8"
-            android:text="@string/_8" />
+            android:text="@string/_8"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button9"
-            android:text="@string/_9" />
+            android:text="@string/_9"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonMultiply"
-            android:text="@string/_multiply" />
+            android:text="@string/_multiply"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
     </LinearLayout>
 
     <LinearLayout
@@ -100,22 +132,35 @@
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button0"
-            android:text="@string/_0" />
+            android:text="@string/_0"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonDot"
-            android:text="@string/_dot" />
+            android:text="@string/_dot"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonEquals"
-            android:text="@string/_equals" />
+            android:text="@string/_equals"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonShare"
-            android:text="@string/_share" />
+            android:text="@string/_share"
+
+            app:backgroundTintMode="screen"
+            android:background="@drawable/rounded_gradient"/>
+
     </LinearLayout>
 
 </LinearLayout>

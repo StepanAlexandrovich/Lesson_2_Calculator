@@ -4,6 +4,9 @@
     <stroke android:color="#808080"
         android:width="2dp" />
 
-    <solid android:color="#ffffff"/>
+    <solid android:color="@color/darkBlue"/>
+    <gradient android:angle="135"
+        android:startColor="@color/black"
+        android:endColor="@color/darkBlue"/>
 
 </shape>
