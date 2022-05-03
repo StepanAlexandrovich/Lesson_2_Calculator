@@ -20,22 +20,27 @@
     <LinearLayout
         style="@style/linearHorizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button1"
-            android:text="@string/_1" />
+            android:text="@string/_1"
 
-        <Button
+            android:backgroundTint="#2196F3"
+            app:cornerRadius="32dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button2"
-            android:text="@string/_2" />
+            android:text="@string/_2"
+            />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button3"
             android:text="@string/_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonPlus"
             android:text="@string/_plus" />
@@ -44,22 +49,22 @@
     <LinearLayout
         style="@style/linearHorizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button4"
             android:text="@string/_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button5"
             android:text="@string/_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button6"
             android:text="@string/_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonMinus"
             android:text="@string/_minus" />
@@ -68,22 +73,22 @@
     <LinearLayout
         style="@style/linearHorizontal" >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button7"
             android:text="@string/_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button8"
             android:text="@string/_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button9"
             android:text="@string/_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonMultiply"
             android:text="@string/_multiply" />
@@ -92,22 +97,22 @@
     <LinearLayout
         style="@style/linearHorizontal" >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/button0"
             android:text="@string/_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonDot"
             android:text="@string/_dot" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonEquals"
             android:text="@string/_equals" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             style="@style/button"
             android:id="@+id/buttonShare"
             android:text="@string/_share" />
