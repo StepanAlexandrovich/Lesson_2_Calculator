@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        int i = (int)(Math.random()*2);
+        if(i == 0){ setTheme(R.style.MyThemeDay);   }
+        else      { setTheme(R.style.MyThemeNight); }
+
         setContentView(R.layout.activity_main);
 
         logic = new Logic();
@@ -37,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.buttonShare).setOnClickListener(this);
         // result
         findViewById(R.id.buttonEquals).setOnClickListener(this);
+
+        findViewById(R.id.buttonNextStyle).setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonShare: logic.inputAction("/"); break;
               // result
             case R.id.buttonEquals: logic.result(); break;
+
+
+            case R.id.buttonNextStyle: recreate();
         }
 
         textView.setText(logic.getText());

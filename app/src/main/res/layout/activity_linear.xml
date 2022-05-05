@@ -13,21 +13,21 @@
         android:layout_margin="@dimen/margin_textView"
         android:textSize="@dimen/textView_text_size"
         android:gravity="right"
+
         android:background="@drawable/space_screen"
-        android:textColor="@color/white"
         android:text="calculator" />
 
     <LinearLayout
-        style="@style/linearHorizontal">
+        style="@style/linearHorizontal" >
 
         <com.google.android.material.button.MaterialButton
-            style="@style/button"
-
             android:id="@+id/button1"
-            android:text="@string/_1"
 
-            app:backgroundTintMode="screen"
-            android:background="@drawable/rounded_gradient" />
+            style="@style/button"
+            android:background="@drawable/rounded_gradient"
+
+            android:text="@string/_1"
+            app:backgroundTintMode="screen" />
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
@@ -115,7 +115,7 @@
             android:text="@string/_9"
 
             app:backgroundTintMode="screen"
-            android:background="@drawable/rounded_gradient"/>
+            android:background="@drawable/rounded_gradient" />
 
         <com.google.android.material.button.MaterialButton
             style="@style/button"
