@@ -5,4 +5,6 @@
     <dimen name="margin_button">8dp</dimen>
     <dimen name="margin_body">8dp</dimen>
     <dimen name="margin_textView">4dp</dimen>
+    <dimen name="textSizeButtonTheme">16sp</dimen>
+    <dimen name="marginButtonTheme">8dp</dimen>
 </resources>

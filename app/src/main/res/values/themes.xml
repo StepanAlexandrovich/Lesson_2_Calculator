@@ -16,17 +16,17 @@
     </style>
 
     <style name = "MyTheme0" parent="Theme.Lesson_2_Calculator">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/red</item>
-        <item name="colorPrimary">@color/red</item>
-        <item name="colorPrimaryDark">@color/white</item>
-    </style>
-
-    <style name = "MyTheme1" parent="Theme.Lesson_2_Calculator">
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">@color/white</item>
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryDark">@color/darkBlue</item>
+    </style>
+
+    <style name = "MyTheme1" parent="Theme.Lesson_2_Calculator">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/white</item>
     </style>
 
     <style name="button" >

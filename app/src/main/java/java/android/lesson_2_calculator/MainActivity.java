@@ -11,16 +11,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Logic logic;
     TextView textView;
 
-    int themeCode = 0;
     SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        init();
-        if(themeCode == 0) { setTheme(R.style.MyTheme0);   }
-        else               { setTheme(R.style.MyTheme1); }
+        setTheme(getCodeTheme());
 
         setContentView(R.layout.activity_main);
 
@@ -47,8 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // result
         findViewById(R.id.buttonEquals).setOnClickListener(this);
 
-        findViewById(R.id.buttonNextStyle).setOnClickListener(this);
-
+        // themes
+        findViewById(R.id.buttonMyTheme0).setOnClickListener(this);
+        findViewById(R.id.buttonMyTheme1).setOnClickListener(this);
     }
 
     @Override
@@ -75,17 +73,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
               // result
             case R.id.buttonEquals: logic.result(); break;
 
-
-            case R.id.buttonNextStyle: onClickSave();  break;
+              // themes
+            case R.id.buttonMyTheme0: onClickSaveTheme(R.style.MyTheme0); break;
+            case R.id.buttonMyTheme1: onClickSaveTheme(R.style.MyTheme1); break;
         }
 
         textView.setText(logic.getText());
     }
 
-    public void onClickSave(){
-        if(themeCode == 0) { themeCode = 1; }
-        else               { themeCode = 0; }
-
+    public void onClickSaveTheme(int themeCode){
         SharedPreferences.Editor edit = pref.edit();
         edit.putInt("key",themeCode);
         edit.apply();
@@ -93,8 +89,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recreate();
     }
 
-    private void init(){
+    private int getCodeTheme(){
         pref = getSharedPreferences("Test",MODE_PRIVATE);
-        themeCode = pref.getInt("key",0);
+        return pref.getInt("key",R.style.MyTheme0);
     }
 }
