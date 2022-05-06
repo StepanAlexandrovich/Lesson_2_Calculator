@@ -2,6 +2,7 @@ package java.android.lesson_2_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -10,13 +11,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Logic logic;
     TextView textView;
 
+    int themeCode = 0;
+    SharedPreferences pref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        int i = (int)(Math.random()*2);
-        if(i == 0){ setTheme(R.style.MyThemeDay);   }
-        else      { setTheme(R.style.MyThemeNight); }
+        init();
+        if(themeCode == 0) { setTheme(R.style.MyTheme0);   }
+        else               { setTheme(R.style.MyTheme1); }
 
         setContentView(R.layout.activity_main);
 
@@ -44,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.buttonEquals).setOnClickListener(this);
 
         findViewById(R.id.buttonNextStyle).setOnClickListener(this);
+
     }
 
     @Override
@@ -71,9 +76,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.buttonEquals: logic.result(); break;
 
 
-            case R.id.buttonNextStyle: recreate();
+            case R.id.buttonNextStyle: onClickSave();  break;
         }
 
         textView.setText(logic.getText());
+    }
+
+    public void onClickSave(){
+        if(themeCode == 0) { themeCode = 1; }
+        else               { themeCode = 0; }
+
+        SharedPreferences.Editor edit = pref.edit();
+        edit.putInt("key",themeCode);
+        edit.apply();
+
+        recreate();
+    }
+
+    private void init(){
+        pref = getSharedPreferences("Test",MODE_PRIVATE);
+        themeCode = pref.getInt("key",0);
     }
 }
