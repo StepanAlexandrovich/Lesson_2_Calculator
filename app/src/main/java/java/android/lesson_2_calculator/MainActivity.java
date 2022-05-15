@@ -1,9 +1,12 @@
 package java.android.lesson_2_calculator;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView textView;
 
     SharedPreferences pref;
+
+    String PARCELABLE_TAG = "parcelable_tag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,5 +97,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int getCodeTheme(){
         pref = getSharedPreferences("Test",MODE_PRIVATE);
         return pref.getInt("key",R.style.MyTheme0);
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putParcelable(PARCELABLE_TAG,logic);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        logic = savedInstanceState.getParcelable(PARCELABLE_TAG);
+        textView.setText(logic.getText());
     }
 }

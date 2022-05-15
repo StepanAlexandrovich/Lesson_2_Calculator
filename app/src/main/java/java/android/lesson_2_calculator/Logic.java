@@ -1,6 +1,6 @@
 package java.android.lesson_2_calculator;
 
-public class Logic {
+public class Logic extends ClassParcelable{
     private Value a = new Value();
     private Value b = new Value();
     private String action = "";
@@ -40,9 +40,11 @@ public class Logic {
     }
 
     /////// helpers to calculation ///////
-    private float floatValue(String value){ return Float.parseFloat(value);  }
+    private double doubleValue(String value){
+        return Double.parseDouble(value);
+    }
 
-    private float action(String action,float a,float b){
+    private double action(String action,double a,double b){
         if(action.equals("+")){ return a + b;  }
         if(action.equals("-")){ return a - b;  }
         if(action.equals("X")){ return a * b;  }
@@ -79,7 +81,7 @@ public class Logic {
 
     void result(){
         if(b.complete()){
-            text += " = "+action(action, floatValue(a.getText()), floatValue(b.getText()) );
+            text += " = "+action(action, doubleValue(a.getText()), doubleValue(b.getText()) );
 
             a.reset();
             action = "";
