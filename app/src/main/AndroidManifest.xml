@@ -10,8 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme0">
         <activity
-            android:name=".MainActivity"
+            android:name=".Calculator"
             android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.CALCULATOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
